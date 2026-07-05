@@ -2,6 +2,7 @@ import { Canvas } from "@react-three/fiber";
 import Experience from "../Experience";
 import * as THREE from "three";
 import MainButton from "../components/MainButton/MainButton";
+import { Link } from "react-router";
 
 const cameraSettings = {
   rotate: [0, Math.PI / 8, 0],
@@ -31,9 +32,9 @@ const Home = () => {
         </Canvas>
       </div>
       <div className="w-4/10">
-        <a href="/config">
+        <Link to="/config">
           <MainButton label={"Start Configurating"} isTitle />
-        </a>
+        </Link>
       </div>
     </div>
   );
