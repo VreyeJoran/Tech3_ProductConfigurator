@@ -4,6 +4,10 @@ An interactive React Three Fiber web application that lets users configure their
 
 The configurator allows users to adjust the shape, color and material of the headphone in real time, so everyone can create a model that matches their personal style and preference.
 
+## Live Demo
+
+[tech3-product-configurator.vercel.app](https://tech3-product-configurator.vercel.app/)
+
 ## Features
 
 Users can customize:
