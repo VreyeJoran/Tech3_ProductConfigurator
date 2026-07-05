@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Avenir";
+  src: url("fonts/avenir-light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/inter-variable.ttf") format("truetype");
+}
+
+@layer base {
+  /* Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: linear-gradient(
+      to bottom right,
+      var(--color-bg-primary),
+      var(--color-bg-secondary),
+      var(--color-bg-primary)
+    );
+    color: var(--color-text-primary);
+  }
+}
+
+@layer components {
+}
+
+@theme {
+  /* Primitives */
+
+  /* color */
+  --color-bright-blue: #2b7fff;
+  --color-bright-green: #05df72;
+  --color-dark-blue: #1d293d;
+  --color-green: #00c950;
+  --color-light-blue: #51a2ff;
+  --color-purple: #9810fa;
+  --color-super-light-blue: #cad5e2;
+  --color-very-dark-blue: #020618;
+  --color-very-light-blue: #90a1b9;
+  --color-white: #ffffff;
+
+  /* number */
+  --size-2px: 0.125rem;
+  --size-4px: 0.25rem;
+  --size-8px: 0.5rem;
+  --size-10px: 0.625rem;
+  --size-12px: 0.75rem;
+  --size-14px: 0.875rem;
+  --size-16px: 1rem;
+  --size-18px: 1.125rem;
+  --size-20px: 1.25rem;
+  --size-24px: 1.5rem;
+  --size-32px: 2rem;
+  --size-40px: 2.5rem;
+  --size-48px: 3rem;
+  --size-64px: 4rem;
+  --size-128px: 8rem;
+
+  /* Tokens */
+
+  /* color */
+  --color-accents-primary: var(--color-bright-blue);
+  --color-accents-secondary: var(--color-light-blue);
+
+  --color-bg-primary: var(--color-very-dark-blue);
+  --color-bg-quaternary: var(--color-purple);
+  --color-bg-secondary: var(--color-dark-blue);
+  --color-bg-success: var(--color-green);
+  --color-bg-tertiary: var(--color-bright-blue);
+
+  --color-border-primary: var(--color-white);
+  --color-border-success: var(--color-green);
+
+  --color-text-primary: var(--color-white);
+  --color-text-secondary: var(--color-super-light-blue);
+  --color-text-success: var(--color-bright-green);
+  --color-text-tertiary: var(--color-very-light-blue);
+
+  /* number */
+  --spacing-xxs: var(--size-2px);
+  --spacing-s: var(--size-8px);
+  --spacing-base: var(--size-14px);
+  --spacing-m: var(--size-24px);
+  --spacing-l: var(--size-40px);
+  --spacing-xl: var(--size-48px);
+
+  --text-2xs: var(--size-10px);
+
+  /* Fonts */
+  --font-primary: "Avenir", sans-serif;
+  --font-secondary: "Inter", sans-serif;
+}
