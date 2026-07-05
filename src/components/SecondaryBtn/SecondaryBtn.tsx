@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router";
 
 interface SecondaryBtnProps {
   label: string;
@@ -34,14 +35,14 @@ const SecondaryBtn = ({
   return (
     <>
       {isLink ? (
-        <a
-          href={linkTo}
+        <Link
+          to={linkTo}
           className="p-(--spacing-s) bg-(--color-bg-secondary)/50 rounded-lg hover:bg-(--color-bg-secondary)/70 transition-colors hover:scale-105 hover:cursor-pointer active:scale-95"
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
         >
           {content}
-        </a>
+        </Link>
       ) : (
         <button
           className="p-(--spacing-s) bg-(--color-bg-secondary)/50 rounded-lg hover:bg-(--color-bg-secondary)/70 transition-colors hover:scale-105 hover:cursor-pointer active:scale-95"
